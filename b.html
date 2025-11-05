@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handloom Heritage - Discover Authentic Indian Handloom</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+
+    <header class="main-header">
+        <div class="top-bar">
+            <h1 class="logo">Handloom Heritage</h1>
+            <div class="search-container">
+                <input type="search" placeholder="Search handloom products..." class="search-input">
+                <button class="search-button">🔍</button>
+            </div>
+            <div class="user-actions">
+                <button class="account-btn">👤</button>
+                <button class="cart-btn" id="open-cart">🛒 <span class="cart-count">(0)</span></button>
+            </div>
+        </div>
+
+        <nav class="main-navigation">
+            <ul class="nav-list">
+                <li><a href="#" class="nav-item active">All Products</a></li>
+                <li><a href="#" class="nav-item">Sarees</a></li>
+                <li><a href="#" class="nav-item">Dresses</a></li>
+                <li><a href="#" class="nav-item">Men's Kurtas</a></li>
+                <li><a href="#" class="nav-item">Men's Shirts</a></li>
+                <li><a href="#" class="nav-item">Kurtis</a></li>
+                <li><a href="#" class="nav-item">Dupattas</a></li>
+                <li><a href="#" class="nav-item">Bags</a></li>
+                <li><a href="#" class="nav-item">Accessories</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section" style="background-image: url('banner-bg.jpg');">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h2>Handloom Heritage</h2>
+                <p>Discover authentic Indian handloom products crafted with traditional techniques.</p>
+                <button class="shop-collection-button">Shop Collection</button>
+            </div>
+        </div>
+    </section>
+
+    <main class="product-page-container">
+
+        <aside class="filter-sidebar">
+            <h3>Categories</h3>
+            <div class="filter-group category-filter">
+                <label><input type="checkbox" name="category" value="sarees"> Sarees</label>
+                <label><input type="checkbox" name="category" value="dresses"> Dresses</label>
+                <label><input type="checkbox" name="category" value="men-kurtas"> Men's Kurtas</label>
+                <label><input type="checkbox" name="category" value="men-shirts"> Men's Shirts</label>
+                <label><input type="checkbox" name="category" value="kurtis"> Kurtis</label>
+                <label><input type="checkbox" name="category" value="dupattas"> Dupattas</label>
+                <label><input type="checkbox" name="category" value="bags"> Bags</label>
+                <label><input type="checkbox" name="category" value="accessories"> Accessories</label>
+            </div>
+            
+            <hr class="divider">
+
+            <h3>Price Range</h3>
+            <div class="filter-group price-filter">
+                <div class="range-display">
+                    <span id="min-price-value">₹0</span> - <span id="max-price-value">₹50,000</span>
+                </div>
+                <input type="range" min="0" max="50000" value="0" id="min-price-slider">
+                <input type="range" min="0" max="50000" value="50000" id="max-price-slider">
+            </div>
+
+            <hr class="divider">
+
+            <h3>Other Filters</h3>
+            <div class="filter-group special-filter">
+                <label><input type="checkbox" name="handmade-only"> **Handmade Only**</label>
+            </div>
+
+            <hr class="divider">
+
+            <h3>Minimum Rating</h3>
+            <div class="filter-group rating-filter">
+                <label><input type="radio" name="rating" value="4-up"> ★★★★ & up</label>
+                <label><input type="radio" name="rating" value="3-up"> ★★★ & up</label>
+                <label><input type="radio" name="rating" value="2-up"> ★★ & up</label>
+            </div>
+
+            <button class="apply-filters-btn">Apply Filters</button>
+        </aside>
+
+        <section class="product-listing">
+            <div class="listing-header">
+                <h2>Our Collection</h2>
+                <p class="product-count">10 products found</p>
+            </div>
+
+            <div class="product-grid">
+
+                <article class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="saree-kanchipuram.jpg" alt="Traditional Kanchipuram Silk Saree">
+                        <span class="badge badge-handmade">Handmade</span>
+                        <span class="badge badge-discount">17% OFF</span>
+                        <button class="wishlist-btn">🤍</button>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-category">SAREES</h4>
+                        <p class="product-name">Traditional Kanchipuram Silk Saree with Golden Zari Work</p>
+                        <div class="rating-display">
+                            <span class="stars">★★★★☆</span>
+                            <span class="review-count">(124)</span>
+                        </div>
+                        <div class="price-box">
+                            <span class="current-price">₹12,500</span>
+                            <span class="original-price">₹15,000</span>
+                        </div>
+                        <button class="add-to-cart-btn">🛒 Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="men-kurta-white.jpg" alt="Traditional White Cotton Kurta">
+                        <button class="wishlist-btn">🤍</button>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-category">MEN'S KURTAS</h4>
+                        <p class="product-name">Traditional White Cotton Kurta - Festival Edition</p>
+                        <div class="rating-display">
+                            <span class="stars">★★★★★</span>
+                            <span class="review-count">(89)</span>
+                        </div>
+                        <div class="price-box">
+                            <span class="current-price">₹3,500</span>
+                            <span class="original-price">₹4,200</span>
+                        </div>
+                        <button class="add-to-cart-btn">🛒 Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="silk-dupatta.jpg" alt="Handwoven Silk Dupatta with Zari Border">
+                        <button class="wishlist-btn">🤍</button>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-category">DUPATTAS</h4>
+                        <p class="product-name">Handwoven Silk Dupatta with Zari Border</p>
+                        <div class="rating-display">
+                            <span class="stars">★★★★☆</span>
+                            <span class="review-count">(112)</span>
+                        </div>
+                        <div class="price-box">
+                            <span class="current-price">₹2,200</span>
+                            <span class="original-price">₹2,800</span>
+                        </div>
+                        <button class="add-to-cart-btn">🛒 Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="kurti-block-print.jpg" alt="Block Print Cotton Kurti">
+                        <button class="wishlist-btn">🤍</button>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-category">KURTIS</h4>
+                        <p class="product-name">Block Print Cotton Kurti - Summer Collection</p>
+                        <div class="rating-display">
+                            <span class="stars">★★★★☆</span>
+                            <span class="review-count">(95)</span>
+                        </div>
+                        <div class="price-box">
+                            <span class="current-price">₹1,800</span>
+                        </div>
+                        <button class="add-to-cart-btn">🛒 Add to Cart</button>
+                    </div>
+                </article>
+                
+                </div>
+            
+            <div class="pagination">
+                <button>&laquo; Previous</button>
+                <span class="page-number current-page">1</span>
+                <span class="page-number">2</span>
+                <span class="page-number">3</span>
+                <button>Next &raquo;</button>
+            </div>
+
+        </section>
+    </main>
+
+    <div class="shopping-cart-modal" id="cart-sidebar">
+        <div class="modal-content">
+            <header class="modal-header">
+                <h3>Shopping Cart</h3>
+                <button class="close-btn" id="close-cart">×</button>
+            </header>
+            <div class="cart-body">
+                <div class="empty-cart-message">
+                    <span class="cart-icon">🛍️</span>
+                    <p>Your cart is empty</p>
+                    <p class="sub-text">Add some beautiful handloom products!</p>
+                </div>
+                </div>
+            <footer class="cart-footer">
+                </footer>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-links">
+            <div class="footer-column">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Track Order</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>About Handloom Heritage</h4>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Ethical Sourcing</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Pinterest</a>
+                </div>
+                <p>Subscribe to our newsletter for 10% off!</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Handloom Heritage. All rights reserved.</p>
+            <div class="payment-icons">
+                </div>
+        </div>
+    </footer>
+    
+    <script src="app.js"></script>
+
+</body>
+</html>
